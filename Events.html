@@ -6,7 +6,13 @@
     <link type="text/css" href="css/menu.css" rel="stylesheet" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="//use.typekit.net/kxn1rzz.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<style type="text/css">
 * { margin:0;
@@ -14,7 +20,7 @@
 }
 html { background:#FFF; }
 
-div#menu {
+div#menuHori {
     top:40px;
     left:0px;
     width:100%;
@@ -30,13 +36,26 @@ div#copyright { display: none; }
       $("#includedHeaderContent").load("html/header.html"); 
     });
     </script> 
+	
+
+
+<script>
+$(function() {
+$( "#menuVert" ).menu();
+});
+</script>
+<style>
+.ui-menu { width: 150px; }
+</style>
+	
+	
 </head>
 <body>
 
 
 
 
-<table>
+<table width="960px">
 
 <tr>
 <td>
@@ -56,25 +75,62 @@ div#copyright { display: none; }
 
 
 <table>
+<tr>
+<td rowspan="2">
+	<ul id="menuVert">
+<li class="ui-state-disabled"><a href="#">This Month's Event</a></li>
+<li><a href="#">Calendar</a></li>
+<li><a href="#">Archive</a>
+<ul>
+<li><a href="#">2004 - 2005</a></li>
+<li><a href="#">2005 - 2006</a></li>
+<li><a href="#">2006 - 2007</a></li>
+<li><a href="#">2007 - 2008</a></li>
+<li><a href="#">2008 - 2009</a></li>
+<li><a href="#">2009 - 2010</a></li>
+<li><a href="#">2010 - 2011</a></li>
+<li><a href="#">2011 - 2012</a></li>
+<li><a href="#">2012 - 2013</a></li>
+<li><a href="#">2013 - 2014</a></li>
+<li><a href="#">2014 - 2015</a></li>
+<li><a href="#">2015 - 2016</a></li>
+</ul>
 
 
+</li>
+<li><a href="#">Suggestion Box</a></li>
 
-<tr style="width:960px;">
-<td><img src="images/u14.jpg" style="width:300px;"/></td>
-<td colspan="2">
-
-<span style="font-family:proxima-nova;color:lightgrey;font-size:15pt">This month's event</span><br>
-<b style="font-family:proxima-nova; font-size:15pt">Information Navigation: Going Beyond the Menu with Justin Marx, Principal UX Design, Nordstrom</b><br><span style="font-family:kepler-std;font-size:10pt;">
-Providing coherent, learnable paths through content is at the heart of digital product design. Whether we're building a social mobile app, an enterprise e-commerce site or an airport check-in kiosk, designing an experience that our users can navigate with as little friction as possible plays a huge part in whether or not it will be considered "intuitive". To do so, we need to understand how and why our users approach our products, and these issues have deep roots indeed.
-
-In this session, we'll explore some of the behaviors underpinning the use of navigation systems. Along the way, we'll take a look at mental models, subway maps, monkey wrenches, and a even little bit of evolutionary biology undefined all in the name of better product design.</span>
+</ul>
 </td>
-<td rowspan="2"><b>Join Us</b>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. </td>
+
+
+<td colspan="2">
+<b>This Month's Event</b>
+<br/>
+<img src="images/u14.jpg" style="width:300px;"/>
+
+</td>
+<td>
+
+
+
+<b>Super Awesome UX Talk</b>
+<br/>
+<b>
+About the Event </b>
+<br/>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+
+</td>
+
 
 
 </tr>
+
+
+
+
 
 <tr>
 <td>
@@ -85,8 +141,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
 Sieg Hall, University of Washington, Seattle</td>
 <td><b>More about the speaker</b>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum .</td>
-
 </tr>
+
+
+
+
 
 
 </table>
@@ -95,15 +154,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
 </tr>
 
 
-<tr>
-<td>
-<div>
-<b>About Us</b>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. 
 
-</div>
-</td>
-</tr>
 
 
 </table>
