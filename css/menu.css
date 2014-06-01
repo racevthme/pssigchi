@@ -20,75 +20,75 @@
  */
 
 /* menu::base */
-#menu {
+#menuHori {
     position:relative;
     z-index:100;
     height:43px;
 }
-#menu .menu {
+#menuHori .menu {
     position:absolute;
     padding-left: 10px;
     background: url(images/header.gif) right top no-repeat; 
 }
-#menu * {
+#menuHori * {
     list-style:none;
     border:0;
     padding:0;
     margin:0;
 }
-#menu a {
+#menuHori a {
     display:block;
     padding:15px 14px 14px 14px;
     white-space:nowrap;
 }
-#menu li {
+#menuHori li {
     float:left;
     background:#fff;
 }
-#menu li li {
+#menuHori li li {
     float:none;
 }
-#menu div {
+#menuHori div {
     visibility:hidden;
     position:absolute;
     background:url(images/pix.gif);
 }
-#menu div div {
+#menuHori div div {
     margin:-35px 0 0 -1px;
     left:100%;
 }
-#menu div div div {
+#menuHori div div div {
     margin:-35px 0 0 -1px;
     left:100%;
 }
-#menu li:hover>div { visibility:visible; }
+#menuHori li:hover>div { visibility:visible; }
 
 /* menu::special styles */
 /* menu::level 1 */
-#menu a {
+#menuHori a {
     text-decoration:none;
     color:#ffffff;/*1*/
     position:relative;
     z-index:77;
 }
-#menu a:hover {
+#menuHori a:hover {
     background:url(images/header.gif) left -43px repeat-x;
     color:#FFF;
 }
-#menu a:hover span { color:#FFF; }
-#menu li.current a {
+#menuHori a:hover span { color:#FFF; }
+#menuHori li.current a {
     background: transparent url(images/header_active.gif) repeat-x;
     color:#3C4955;
 }
-#menu li.current span {
+#menuHori li.current span {
     color:#3C4955;
 }
-#menu>ul>li:hover>a {
+#menuHori>ul>li:hover>a {
     background:url(images/header.gif) left -43px repeat-x;
     color:#CACFD3;
 }
-#menu>ul>li:hover>a span { color:#FFF; }
-#menu span {
+#menuHori>ul>li:hover>a span { color:#FFF; }
+#menuHori span {
     text-transform:uppercase;
     font:12px 'proxima-nova','Lucida Sans Unicode',Arial,Verdana,sans-serif;
     font-weight: 300;
@@ -96,13 +96,13 @@
     text-decoration:none;
     color:#ffffff;
 }
-#menu li { background: url(images/header.gif) left top no-repeat;}
+#menuHori li { background: url(images/header.gif) left top no-repeat;}
 /* menu::level >= 2 */
-#menu ul ul {width: 150px;}
-#menu li li{
+#menuHori ul ul {width: 150px;}
+#menuHori li li{
 	  background:#FF9000;
 	  border-bottom:1px solid #FFAB3E;}
-#menu li li a {
+#menuHori li li a {
     position:static;
     background:#FF9000;
     white-space:normal;
@@ -112,19 +112,19 @@
 		text-transform:none;
 		width: 100%;
 }
-#menu li.current li a {
+#menuHori li.current li a {
     background: none;
     color:#FFF;
 }
-#menu li.current li span {
+#menuHori li.current li span {
     color:#FFF;
 }
-#menu li li a:hover { background:#FA7E04; }
-#menu li li a span { color:#fff; line-height: 15px; padding: 10px;	}
-#menu li li a:hover span { color:#ffffff; }
-#menu li li a.parent span{background:transparent url(images/arrow.gif) no-repeat scroll right 50%; z-index:10;  }
+#menuHori li li a:hover { background:#FA7E04; }
+#menuHori li li a span { color:#fff; line-height: 15px; padding: 10px;	}
+#menuHori li li a:hover span { color:#ffffff; }
+#menuHori li li a.parent span{background:transparent url(images/arrow.gif) no-repeat scroll right 50%; z-index:10;  }
 
-#menu li li span {
+#menuHori li li span {
     display:block;
     text-transform:none;
     padding:0px 25px 0px 0px;
