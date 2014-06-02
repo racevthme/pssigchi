@@ -67,7 +67,7 @@
 /* menu::level 1 */
 #menuHori a {
     text-decoration:none;
-    color:#ffffff;/*1*/
+    color:gray;/*1*/
     position:relative;
     z-index:77;
 }
